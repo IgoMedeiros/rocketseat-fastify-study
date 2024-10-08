@@ -3,7 +3,7 @@ import { env } from "./env"
 import { transactionsRoutes } from "./routes/transactions"
 import fastifyCookie from "@fastify/cookie"
 
-export const app = fastify({ logger: true })
+export const app = fastify()
 
 app.register(fastifyCookie)
 
